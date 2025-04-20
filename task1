@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    double meters;
+    printf("Введіть довжину в метрах: ");
+    scanf("%lf", &meters);
+    printf("Сантиметри: %.2f см\n", meters * 100);
+    printf("Міліметри: %.2f мм\n", meters * 1000);
+    return 0;
+}
