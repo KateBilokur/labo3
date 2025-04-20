@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    char lower;
+    printf("Введіть малу літеру англійського алфавіту: ");
+    scanf(" %c", &lower);  // пробіл перед %c потрібен для ігнорування пробілу після числа
+
+    if (lower >= 'a' && lower <= 'z') {
+        char upper = lower - ('a' - 'A');
+        printf("Велика літера: %c\n", upper);
+    } else {
+        printf("Це не мала літера англійського алфавіту\n");
+    }
+
+    return 0;
+}
