@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    double radius;
+    const double pi = 3.14159265;
+    printf("Введіть радіус кола: ");
+    scanf("%lf", &radius);
+    double area = pi * radius * radius;
+    printf("Площа кола: %.2f\n", area);
+    return 0;
+}
